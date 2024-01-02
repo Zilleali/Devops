@@ -47,6 +47,10 @@
       <nav role="navigation">
   <ul>
     {%- for link in linklists.menu.links -%}
+      
+      <div class="page-header__inner">
+            <div class="page-header__logo"><a class="logo" href="{{ site.url }}"><img src="{{ "logo.png" | asset_url }}"
+                        alt="{{ site.name }}"></a></div>
       <li>
         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
