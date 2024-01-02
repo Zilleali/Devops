@@ -44,8 +44,9 @@
             <div class="page-header__btn"> <a class="menu-btn" href="#offcanvas" data-uk-toggle> <img
                         src="{{ "icon_menu-btn.svg" | asset_url }}" alt="menu-btn"></a></div>
         </div> -->
-      <nav role="navigation">
-  <ul>
+      <nav role="navigation" class="page-header__inner">
+         <div class="page-header__logo logo"><a class="logo" href="{{ site.url }}"><img src="{{ "logo.png" | asset_url }}" alt="{{ site.name }}"></a></div>
+  <ul class="page-header__menu">
     {%- for link in linklists.menu.links -%}
       
       <li>
