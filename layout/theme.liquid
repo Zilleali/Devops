@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
   <head>
     {{ content_for_header }}
@@ -10,3 +11,17 @@
     {{ 'script.js' | asset_url | script_tag }}
   </body>
 </html>
+=======
+<html>
+  <head>
+    {{ content_for_header }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body>
+    {%  render 'header' %}
+    {{ content_for_layout }}
+    {{ 'script.js' | asset_url | script_tag }}
+  </body>
+</html>
+>>>>>>> 306c97ab234a2822e9d73d1fcb8a87285384bd06
