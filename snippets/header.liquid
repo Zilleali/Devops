@@ -1,7 +1,7 @@
 <div class="page-wrapper">
     <header class="page-header">
         <div class="page-header__inner">
-            <div class="page-header__logo"><a class="logo" href="{{ site.url }}"><img src="{{ "logo.png" | asset_url }}assets/img/logo.png"
+            <div class="page-header__logo"><a class="logo" href="{{ site.url }}"><img src="{{ "logo.png" | asset_url }}"
                         alt="{{ site.name }}"></a></div>
             <div class="page-header__menu">
                 <nav class="page-nav" data-uk-navbar="">
@@ -42,6 +42,6 @@
                 </nav>
             </div>
             <div class="page-header__btn"> <a class="menu-btn" href="#offcanvas" data-uk-toggle> <img
-                        src="assets/img/icon_menu-btn.svg" alt="menu-btn"></a></div>
+                        src="{{ "icon_menu-btn.svg" | asset_url }}" alt="menu-btn"></a></div>
         </div>
     </header>
