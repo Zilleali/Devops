@@ -1,27 +1,15 @@
-<<<<<<< HEAD
 <html>
   <head>
     {{ content_for_header }}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'main.css' | asset_url | stylesheet_tag }}
+    {{ 'libs.min.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body  class="page-home">
     {%  render 'header' %}
     {{ content_for_layout }}
-    {{ 'script.js' | asset_url | script_tag }}
+    {%  render 'footer' %}
+    {{ 'libs.js' | asset_url | script_tag }}
+    {{ 'main.js' | asset_url | script_tag }}
   </body>
 </html>
-=======
-<html>
-  <head>
-    {{ content_for_header }}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
-  </head>
-
-  <body>
-    {%  render 'header' %}
-    {{ content_for_layout }}
-    {{ 'script.js' | asset_url | script_tag }}
-  </body>
-</html>
->>>>>>> 306c97ab234a2822e9d73d1fcb8a87285384bd06
