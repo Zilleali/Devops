@@ -36,6 +36,8 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
     {%  render 'header' %}
+        {% sections 'header-group' %}
+
     {{ content_for_layout }}
     <!-- {%  render 'footer' %} -->
     <script src="{{ 'libs.js' | asset_url }}" defer></script>
