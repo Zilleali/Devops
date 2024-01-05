@@ -31,7 +31,8 @@
     {%  render 'header' %}
     {{ content_for_layout }}
     <!-- {%  render 'footer' %} -->
-    {{ 'libs.js' | asset_url | script_tag }}
-    {{ 'main.js' | asset_url | script_tag }}
+    <script src="{{ 'libs.js' | asset_url }}" defer></script>
+    <script src="{{ 'main.js' | asset_url }}" defer></script>
+
   </body>
 </html>
